@@ -1,0 +1,27 @@
+package com.kce.weather.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+
+@Entity
+@Table(name="weather_record")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class WeatherRecord {
+
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private Long id;
+
+private String timestamp;
+private String condition;
+private Double temperature;
+private Double humidity;
+private Double pressure;
+private Double windSpeed;
+
+}

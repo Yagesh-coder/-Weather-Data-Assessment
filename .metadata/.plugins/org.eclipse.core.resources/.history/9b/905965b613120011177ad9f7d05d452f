@@ -1,0 +1,14 @@
+package com.kce.weather.service;
+
+import com.kce.weather.entity.WeatherRecord;
+import java.util.List;
+
+public interface WeatherService {
+
+void loadCsv(String path);
+
+List<WeatherRecord> getAll(String sortBy);
+
+List<WeatherRecord> filter(Double minTemp, Double maxTemp,String condition);
+
+}

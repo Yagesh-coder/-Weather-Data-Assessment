@@ -1,0 +1,58 @@
+0:41:57 Tab7 StartNav154 #typed
+0:41:57 Tab7 FinishNav154 ERR_ABORTED
+0:41:57 Tab7 StartNav155 #typed
+0:41:57 Tab7 FinishNav155 ERR_ABORTED
+0:41:57 Tab7 StartNav156 #typed
+0:41:57 Tab7 FinishNav156 ERR_ABORTED
+0:41:57 Tab7 StartNav157 #typed
+0:41:57 Tab7 FinishNav157 ERR_ABORTED
+0:41:57 Tab7 StartNav158 #typed
+0:41:57 Tab7 FinishNav158 ERR_ABORTED
+0:41:57 Tab7 StartNav159 #typed
+0:41:57 Tab7 FinishNav159 ERR_ABORTED
+0:41:57 Tab7 StartNav160 #typed
+0:41:57 Tab7 FinishNav160 ERR_ABORTED
+0:41:57 Tab7 StartNav161 #typed
+0:41:57 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+0:41:57 Browser7 Close Tab7 at 0
+0:41:57 Tab7 FinishNav161 ERR_ABORTED
+0:41:57 Tab7 WebContentsDestroyed
+0:41:57 Microsoft.UnloadController.TabStripEmpty
+0:41:57 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:41:57 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:41:57 Microsoft.Shutdown.OnWindowClosing
+0:41:57 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:41:57 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:41:57 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+0:41:57 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+0:41:57 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+0:41:57 Widget Closed: BrowserWidget
+0:41:57 Microsoft.Browser_Removed
+0:45:52 Tab2 StartNav162 #typed
+0:45:52 Tab2 FinishNav162
+0:45:52 Tab2 PageLoad
+0:46:44 Tab4 StartNav163 #typed
+0:46:44 Tab4 FinishNav163
+0:46:44 Tab4 PageLoad
+0:46:47 Tab4 StartNav164 #typed
+0:46:47 Tab4 FinishNav164
+0:46:47 Tab4 PageLoad
+0:52:20 Memory Pressure: Moderate
+0:52:25 Memory Pressure: None
+0:52:30 Memory Pressure: Moderate
+0:52:35 Memory Pressure: None
+0:52:55 Memory Pressure: Moderate
+0:53:00 Memory Pressure: None
+0:53:20 Memory Pressure: Moderate
+0:53:25 Memory Pressure: None
+0:56:30 Memory Pressure: Moderate
+0:56:40 Memory Pressure: None
+1:01:30 Tab4 StartNav165 #typed
+1:01:31 Tab4 FinishNav165 ERR_ABORTED
+1:01:31 Tab4 StartNav166 #typed
+1:01:31 Tab4 FinishNav166
+1:01:31 Tab4 PageLoad
+1:01:32 Tab4 StartNav167 #typed
+1:01:32 Tab4 FinishNav167
+1:01:32 Tab4 PageLoad
+1:02:43 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp

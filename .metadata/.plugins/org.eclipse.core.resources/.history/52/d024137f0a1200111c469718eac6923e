@@ -1,0 +1,5 @@
+package com.kce.weather.entity;
+
+public class WeatherRecord {
+
+}

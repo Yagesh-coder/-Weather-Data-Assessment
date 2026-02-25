@@ -1,0 +1,86 @@
+package com.kce.weather.service.impl;
+
+import com.kce.weather.entity.WeatherRecord;
+import com.kce.weather.repository.WeatherRepository;
+import com.kce.weather.service.WeatherService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class WeatherServiceImpl implements WeatherService {
+
+private final WeatherRepository repo;
+
+public void loadCsv(String path){
+
+try{
+
+BufferedReader br=new BufferedReader(new FileReader(path));
+
+String line;
+
+br.readLine();
+
+List<WeatherRecord> list=new ArrayList<>();
+
+while((line=br.readLine())!=null){
+
+String[] c=line.split(",");
+
+WeatherRecord w=WeatherRecord.builder()
+.timestamp(c[0])
+.condition(c[1])
+.temperature(parse(c[11]))
+.humidity(parse(c[6]))
+.pressure(parse(c[8]))
+.windSpeed(parse(c[19]))
+.build();
+
+list.add(w);
+}
+
+repo.saveAll(list);
+
+}catch(Exception e){
+throw new RuntimeException(e);
+}
+}
+
+private Double parse(String s){
+
+try{
+return s==null||s.isBlank()?null:Double.parseDouble(s);
+}catch(Exception e){
+return null;
+}
+
+}
+
+public List<WeatherRecord> getAll(String sortBy){
+
+if(sortBy==null) return repo.findAll();
+
+return repo.findAll(Sort.by(sortBy));
+
+}
+
+public List<WeatherRecord> filter(Double min,Double max,String cond){
+
+List<WeatherRecord> all=repo.findAll();
+
+return all.stream()
+.filter(w->min==null||w.getTemperature()!=null&&w.getTemperature()>=min)
+.filter(w->max==null||w.getTemperature()!=null&&w.getTemperature()<=max)
+.filter(w->cond==null||w.getCondition()!=null&&w.getCondition().equalsIgnoreCase(cond))
+.toList();
+
+}
+
+}

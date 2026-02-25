@@ -1,0 +1,5 @@
+package com.kce.weather.repository;
+
+public class WeatherRepository {
+
+}

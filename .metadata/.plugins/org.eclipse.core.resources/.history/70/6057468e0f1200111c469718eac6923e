@@ -1,0 +1,13 @@
+spring.application.name=weather-service
+
+server.port=6000
+
+
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:XE
+spring.datasource.username=system
+spring.datasource.password=2965
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+
+
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.database-platform=org.hibernate.dialect.OracleDialect
