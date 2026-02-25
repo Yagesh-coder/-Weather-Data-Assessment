@@ -10,7 +10,7 @@ The system reads the provided CSV dataset, converts each row into a weather reco
 
 ## Technology Stack
 
-* Java 17+
+* Java 21
 * Spring Boot
 * Spring Data JPA (Hibernate)
 * Oracle Database
