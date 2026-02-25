@@ -119,28 +119,3 @@ GET /weather/filter?condition=Haze
 Combine filters:
 
 GET /weather/filter?minTemp=20&maxTemp=30&condition=Haze
-
----
-
-## Swagger Documentation
-
-After running the application, open:
-
-http://localhost:6001/swagger-ui/index.html
-
-You can test all APIs directly from Swagger UI.
-
----
-
-## Expected Workflow
-
-1. Start database
-2. Run Spring Boot application
-3. Call `/weather/load` once
-4. Use GET endpoints for querying data
-
----
-
-## Author
-
-Spring Boot Weather CSV Processing Assignment
