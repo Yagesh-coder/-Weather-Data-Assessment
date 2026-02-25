@@ -10,7 +10,7 @@ The system reads the provided CSV dataset, converts each row into a weather reco
 
 ## Technology Stack
 
-* Java 21
+* Java 17+
 * Spring Boot
 * Spring Data JPA (Hibernate)
 * Oracle Database
@@ -119,3 +119,13 @@ GET /weather/filter?condition=Haze
 Combine filters:
 
 GET /weather/filter?minTemp=20&maxTemp=30&condition=Haze
+
+---
+
+## Swagger Documentation
+
+After running the application, open:
+
+http://localhost:6001/swagger-ui/index.html
+
+You can test all APIs directly from Swagger UI also.
